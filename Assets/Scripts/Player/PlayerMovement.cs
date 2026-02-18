@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
   void Update()
   {
-    playerRb.velocity = new Vector2(playerMove.x * horizontalMoveSpeed, playerRb.velocity.y);
+    playerRb.linearVelocity = new Vector2(playerMove.x * horizontalMoveSpeed, playerRb.linearVelocity.y);
   }
 
   void FixedUpdate()

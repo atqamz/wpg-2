@@ -59,7 +59,7 @@ public class GroundEnemy : MonoBehaviour
 
   void MoveCharacter()
   {
-    enemyRb.velocity = new Vector2(enemySpeed * Time.fixedDeltaTime, enemyRb.velocity.y);
+    enemyRb.linearVelocity = new Vector2(enemySpeed * Time.fixedDeltaTime, enemyRb.linearVelocity.y);
   }
 
   void Flip()
